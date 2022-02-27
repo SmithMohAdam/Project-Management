@@ -1,0 +1,1092 @@
+2022-02-27 09:01:53.384  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:01:53.387 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:01:53.387  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:01:53.426  INFO 6100 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\m.adam\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.3.0.0\ojdbc8-21.3.0.0.jar referenced one or more files that do not exist: file:/C:/Users/m.adam/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.3.0.0/oraclepki.jar
+2022-02-27 09:01:53.427  INFO 6100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-27 09:01:53.427  INFO 6100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-27 09:01:54.193  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:01:54.232  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:01:54.835  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:01:54.843  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:01:54.843  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:01:54.918  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:01:54.918  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1490 ms
+2022-02-27 09:01:54.947  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-27 09:01:56.105  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-27 09:01:56.114  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:01:56.242  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:01:56.280  INFO 6100 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-02-27 09:01:56.427  INFO 6100 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-27 09:01:56.531  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:01:58.582  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:01:58.588  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:01:58.854  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:01:58.973  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d7f324d, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f173cd, org.springframework.security.web.header.HeaderWriterFilter@2ddc61c9, org.springframework.security.web.csrf.CsrfFilter@96a740, org.springframework.security.web.authentication.logout.LogoutFilter@44d5de5b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e9ee128, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@8bc63e4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@68eb119c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62ddbb1a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a846855, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a954f65, org.springframework.security.web.session.SessionManagementFilter@265f7419, org.springframework.security.web.access.ExceptionTranslationFilter@68624773, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2bd2b641]
+2022-02-27 09:01:59.243  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:01:59.272  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:01:59.280  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 6.21 seconds (JVM running for 6.995)
+2022-02-27 09:02:08.140  INFO 6100 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-27 09:02:08.140  INFO 6100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-27 09:02:08.141  INFO 6100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-27 09:02:08.172 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:02:08.173 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{}]
+2022-02-27 09:02:08.301 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:02:08.302 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{projects=[], employees=[]}]
+2022-02-27 09:02:14.959 DEBUG 6100 --- [http-nio-8080-exec-6] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:02:14.959 DEBUG 6100 --- [http-nio-8080-exec-6] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{}]
+2022-02-27 09:02:14.962 DEBUG 6100 --- [http-nio-8080-exec-6] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:02:14.962 DEBUG 6100 --- [http-nio-8080-exec-6] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{projects=[], employees=[]}]
+2022-02-27 09:02:16.590 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:02:16.590 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.ProjectController------displayProjects-----with argument--[{}]
+2022-02-27 09:02:16.594 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:02:16.594 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.ProjectController------displayProjects-----with argument--[{projects=[]}]
+2022-02-27 09:02:23.387 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:02:23.387 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployees-----with argument--[{}]
+2022-02-27 09:02:23.392 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:02:23.392 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployees-----with argument--[{employees=[]}]
+2022-02-27 09:02:25.841 DEBUG 6100 --- [http-nio-8080-exec-2] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:02:25.842 DEBUG 6100 --- [http-nio-8080-exec-2] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployeeForm-----with argument--[{}]
+2022-02-27 09:02:25.842 DEBUG 6100 --- [http-nio-8080-exec-2] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:02:25.842 DEBUG 6100 --- [http-nio-8080-exec-2] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployeeForm-----with argument--[{employee=com.smith.demo.entitis.Employee@1ac296e3}]
+2022-02-27 09:02:46.636 DEBUG 6100 --- [http-nio-8080-exec-6] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:02:46.636 DEBUG 6100 --- [http-nio-8080-exec-6] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployeeForm-----with argument--[{}]
+2022-02-27 09:02:46.637 DEBUG 6100 --- [http-nio-8080-exec-6] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:02:46.637 DEBUG 6100 --- [http-nio-8080-exec-6] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployeeForm-----with argument--[{employee=com.smith.demo.entitis.Employee@3b254163}]
+2022-02-27 09:03:02.645 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:03:02.645 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployeeForm-----with argument--[{}]
+2022-02-27 09:03:02.645 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:03:02.645 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployeeForm-----with argument--[{employee=com.smith.demo.entitis.Employee@25253638}]
+2022-02-27 09:03:04.409 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:03:04.409 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.ProjectController------displayProjects-----with argument--[{}]
+2022-02-27 09:03:04.411 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:03:04.411 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.ProjectController------displayProjects-----with argument--[{projects=[]}]
+2022-02-27 09:05:23.441 DEBUG 6100 --- [http-nio-8080-exec-3] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:05:23.441 DEBUG 6100 --- [http-nio-8080-exec-3] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.SecurityController------registerForm-----with argument--[{}]
+2022-02-27 09:05:23.444 DEBUG 6100 --- [http-nio-8080-exec-3] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:05:23.444 DEBUG 6100 --- [http-nio-8080-exec-3] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.SecurityController------registerForm-----with argument--[{userAccount=com.smith.demo.entitis.UserAccounts@487b8ac6}]
+2022-02-27 09:05:47.866 DEBUG 6100 --- [http-nio-8080-exec-4] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:05:47.866 DEBUG 6100 --- [http-nio-8080-exec-4] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.SecurityController------register-----with argument--[{userAccounts=com.smith.demo.entitis.UserAccounts@3540bfa9, org.springframework.validation.BindingResult.userAccounts=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.smith.demo.entitis.UserAccounts@3540bfa9]
+2022-02-27 09:05:48.144 DEBUG 6100 --- [http-nio-8080-exec-4] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:05:48.144 DEBUG 6100 --- [http-nio-8080-exec-4] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.SecurityController------register-----with argument--[{userAccounts=com.smith.demo.entitis.UserAccounts@3540bfa9, org.springframework.validation.BindingResult.userAccounts=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, com.smith.demo.entitis.UserAccounts@3540bfa9]
+2022-02-27 09:05:48.152 DEBUG 6100 --- [http-nio-8080-exec-5] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:05:48.153 DEBUG 6100 --- [http-nio-8080-exec-5] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{}]
+2022-02-27 09:05:48.156 DEBUG 6100 --- [http-nio-8080-exec-5] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:05:48.156 DEBUG 6100 --- [http-nio-8080-exec-5] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{projects=[], employees=[]}]
+2022-02-27 09:05:54.730 DEBUG 6100 --- [http-nio-8080-exec-7] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:05:54.731 DEBUG 6100 --- [http-nio-8080-exec-7] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{}]
+2022-02-27 09:05:54.733 DEBUG 6100 --- [http-nio-8080-exec-7] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:05:54.733 DEBUG 6100 --- [http-nio-8080-exec-7] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{projects=[], employees=[]}]
+2022-02-27 09:05:56.127 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:05:56.128 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{}]
+2022-02-27 09:05:56.130 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:05:56.130 DEBUG 6100 --- [http-nio-8080-exec-1] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{projects=[], employees=[]}]
+2022-02-27 09:05:58.656 DEBUG 6100 --- [http-nio-8080-exec-4] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:05:58.656 DEBUG 6100 --- [http-nio-8080-exec-4] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.ProjectController------displayProjects-----with argument--[{}]
+2022-02-27 09:05:58.657 DEBUG 6100 --- [http-nio-8080-exec-4] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:05:58.657 DEBUG 6100 --- [http-nio-8080-exec-4] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.ProjectController------displayProjects-----with argument--[{projects=[]}]
+2022-02-27 09:06:00.008 DEBUG 6100 --- [http-nio-8080-exec-8] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:00.008 DEBUG 6100 --- [http-nio-8080-exec-8] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployees-----with argument--[{}]
+2022-02-27 09:06:00.010 DEBUG 6100 --- [http-nio-8080-exec-8] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:00.010 DEBUG 6100 --- [http-nio-8080-exec-8] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployees-----with argument--[{employees=[]}]
+2022-02-27 09:06:01.312 DEBUG 6100 --- [http-nio-8080-exec-7] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:01.312 DEBUG 6100 --- [http-nio-8080-exec-7] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.ProjectController------displayProjects-----with argument--[{}]
+2022-02-27 09:06:01.314 DEBUG 6100 --- [http-nio-8080-exec-7] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:01.314 DEBUG 6100 --- [http-nio-8080-exec-7] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.ProjectController------displayProjects-----with argument--[{projects=[]}]
+2022-02-27 09:06:01.856 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:01.856 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{}]
+2022-02-27 09:06:01.858 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:01.858 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{projects=[], employees=[]}]
+2022-02-27 09:06:05.135 DEBUG 6100 --- [http-nio-8080-exec-3] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:05.136 DEBUG 6100 --- [http-nio-8080-exec-3] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{}]
+2022-02-27 09:06:05.138 DEBUG 6100 --- [http-nio-8080-exec-3] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:05.138 DEBUG 6100 --- [http-nio-8080-exec-3] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.HomeComtroller------viewHome-----with argument--[{projects=[], employees=[]}]
+2022-02-27 09:06:08.304 DEBUG 6100 --- [http-nio-8080-exec-8] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:08.304 DEBUG 6100 --- [http-nio-8080-exec-8] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.ProjectController------displayProjects-----with argument--[{}]
+2022-02-27 09:06:08.305 DEBUG 6100 --- [http-nio-8080-exec-8] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:08.305 DEBUG 6100 --- [http-nio-8080-exec-8] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.ProjectController------displayProjects-----with argument--[{projects=[]}]
+2022-02-27 09:06:09.135 DEBUG 6100 --- [http-nio-8080-exec-7] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:09.136 DEBUG 6100 --- [http-nio-8080-exec-7] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployees-----with argument--[{}]
+2022-02-27 09:06:09.137 DEBUG 6100 --- [http-nio-8080-exec-7] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:09.137 DEBUG 6100 --- [http-nio-8080-exec-7] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployees-----with argument--[{employees=[]}]
+2022-02-27 09:06:29.386 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:29.387 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployeeForm-----with argument--[{}]
+2022-02-27 09:06:29.387 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:29.387 DEBUG 6100 --- [http-nio-8080-exec-9] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployeeForm-----with argument--[{employee=com.smith.demo.entitis.Employee@79494cd7}]
+2022-02-27 09:06:39.840 DEBUG 6100 --- [http-nio-8080-exec-3] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:39.841 DEBUG 6100 --- [http-nio-8080-exec-3] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployeeForm-----with argument--[{}]
+2022-02-27 09:06:39.841 DEBUG 6100 --- [http-nio-8080-exec-3] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:39.841 DEBUG 6100 --- [http-nio-8080-exec-3] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.EmployeeController------displayEmployeeForm-----with argument--[{employee=com.smith.demo.entitis.Employee@6a27a595}]
+2022-02-27 09:06:43.320 DEBUG 6100 --- [http-nio-8080-exec-4] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:43.321 DEBUG 6100 --- [http-nio-8080-exec-4] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.ProjectController------displayProjects-----with argument--[{}]
+2022-02-27 09:06:43.322 DEBUG 6100 --- [http-nio-8080-exec-4] com.smith.demo.aop.AppLogging            : 
+
+
+-----------------------SOMETHING----------------------------
+
+
+
+2022-02-27 09:06:43.323 DEBUG 6100 --- [http-nio-8080-exec-4] com.smith.demo.aop.AppLogging            : -------com.smith.demo.controllers.ProjectController------displayProjects-----with argument--[{projects=[]}]
+2022-02-27 09:09:59.128  INFO 6100 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:09:59.130  INFO 6100 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-27 09:09:59.133  INFO 6100 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-27 09:09:59.224  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:09:59.224 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:09:59.224  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:09:59.378  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:09:59.386  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:09:59.466  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:09:59.466  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:09:59.466  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:09:59.489  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:09:59.489  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 263 ms
+2022-02-27 09:09:59.498  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-02-27 09:09:59.543  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-02-27 09:09:59.543  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:09:59.565  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:09:59.568  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:09:59.635  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:09:59.635  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:09:59.709  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:09:59.725  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e950054, org.springframework.security.web.context.SecurityContextPersistenceFilter@7414dbd1, org.springframework.security.web.header.HeaderWriterFilter@1611dc11, org.springframework.security.web.csrf.CsrfFilter@7f90f1e5, org.springframework.security.web.authentication.logout.LogoutFilter@72dd14fc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e1da8b2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@18d8b0bf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1c3d074, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14359200, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c5c25c3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50125752, org.springframework.security.web.session.SessionManagementFilter@cf31c73, org.springframework.security.web.access.ExceptionTranslationFilter@79b33e45, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13785f09]
+2022-02-27 09:09:59.812  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:09:59.825  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:09:59.828  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.63 seconds (JVM running for 487.545)
+2022-02-27 09:09:59.830  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:16:52.135  INFO 6100 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:16:52.136  INFO 6100 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-02-27 09:16:52.137  INFO 6100 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-02-27 09:16:52.190  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:16:52.190 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:16:52.190  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:16:52.311  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:16:52.320  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:16:52.394  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:16:52.394  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:16:52.394  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:16:52.412  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:16:52.412  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 220 ms
+2022-02-27 09:16:52.420  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-02-27 09:16:52.461  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-02-27 09:16:52.461  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:16:52.480  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:16:52.483  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:16:52.543  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:16:52.543  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:16:52.613  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:16:52.629  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d8468da, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b89d9cc, org.springframework.security.web.header.HeaderWriterFilter@11734aa0, org.springframework.security.web.csrf.CsrfFilter@2cd987ce, org.springframework.security.web.authentication.logout.LogoutFilter@7e5ead, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@63d147ba, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5af0a0dc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@8aaf2cd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2cea6f3f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27470648, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72835051, org.springframework.security.web.session.SessionManagementFilter@b8ed884, org.springframework.security.web.access.ExceptionTranslationFilter@249c771d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f14b8f9]
+2022-02-27 09:16:52.713  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:16:52.721  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:16:52.724  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.552 seconds (JVM running for 900.441)
+2022-02-27 09:16:52.725  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:17:30.468  INFO 6100 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:17:30.469  INFO 6100 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-02-27 09:17:30.471  INFO 6100 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-02-27 09:17:30.526  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:17:30.526 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:17:30.526  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:17:30.640  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:17:30.648  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:17:30.718  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:17:30.719  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:17:30.719  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:17:30.735  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:17:30.736  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 208 ms
+2022-02-27 09:17:30.744  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-02-27 09:17:30.892  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-02-27 09:17:30.892  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:17:30.910  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:17:30.913  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:17:30.981  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:17:30.982  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:17:31.049  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:17:31.071  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70bc9469, org.springframework.security.web.context.SecurityContextPersistenceFilter@35c7270e, org.springframework.security.web.header.HeaderWriterFilter@648488c5, org.springframework.security.web.csrf.CsrfFilter@694cd35c, org.springframework.security.web.authentication.logout.LogoutFilter@6e31e814, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@11ee1176, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@15744191, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@632647a3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@198dc983, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@590fb8d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@105dad81, org.springframework.security.web.session.SessionManagementFilter@3a9ec532, org.springframework.security.web.access.ExceptionTranslationFilter@3253c6ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3af92e28]
+2022-02-27 09:17:31.152  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:17:31.159  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:17:31.163  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.655 seconds (JVM running for 938.88)
+2022-02-27 09:17:31.164  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:17:54.827  INFO 6100 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:17:54.827  INFO 6100 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-02-27 09:17:54.830  INFO 6100 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-02-27 09:17:54.887  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:17:54.888 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:17:54.888  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:17:55.001  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:17:55.010  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:17:55.083  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:17:55.084  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:17:55.084  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:17:55.102  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:17:55.102  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 213 ms
+2022-02-27 09:17:55.111  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2022-02-27 09:17:55.152  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2022-02-27 09:17:55.152  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:17:55.175  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:17:55.179  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:17:55.244  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:17:55.244  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:17:55.310  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:17:55.324  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48fbdf91, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f62c4f9, org.springframework.security.web.header.HeaderWriterFilter@608e6db8, org.springframework.security.web.csrf.CsrfFilter@da70fda, org.springframework.security.web.authentication.logout.LogoutFilter@3130eb49, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@365e0603, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7ec134d8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@18e68d4d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31def4a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@222eac8f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18b57bff, org.springframework.security.web.session.SessionManagementFilter@2a8ed7ad, org.springframework.security.web.access.ExceptionTranslationFilter@7a5a9905, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3be76688]
+2022-02-27 09:17:55.414  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:17:55.421  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:17:55.424  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.557 seconds (JVM running for 963.141)
+2022-02-27 09:17:55.425  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:21:45.512  INFO 6100 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:21:45.512  INFO 6100 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2022-02-27 09:21:45.515  INFO 6100 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2022-02-27 09:21:45.569  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:21:45.569 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:21:45.569  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:21:45.686  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:21:45.693  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:21:45.768  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:21:45.768  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:21:45.769  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:21:45.787  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:21:45.787  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 216 ms
+2022-02-27 09:21:45.797  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2022-02-27 09:21:45.879  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2022-02-27 09:21:45.879  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:21:45.901  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:21:45.903  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:21:45.969  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:21:45.969  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:21:46.046  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:21:46.062  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f9b7857, org.springframework.security.web.context.SecurityContextPersistenceFilter@361f075d, org.springframework.security.web.header.HeaderWriterFilter@1a30951a, org.springframework.security.web.csrf.CsrfFilter@629295a, org.springframework.security.web.authentication.logout.LogoutFilter@72bfa4d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@613bb3a2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3140765a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3de650db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a864fdf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54808bd0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c707183, org.springframework.security.web.session.SessionManagementFilter@79b392c8, org.springframework.security.web.access.ExceptionTranslationFilter@2fba6bfa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f9bd995]
+2022-02-27 09:21:46.145  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:21:46.154  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:21:46.158  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.606 seconds (JVM running for 1193.878)
+2022-02-27 09:21:46.159  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:26:39.976  INFO 6100 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:26:39.977  INFO 6100 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2022-02-27 09:26:39.979  INFO 6100 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2022-02-27 09:26:40.033  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:26:40.034 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:26:40.034  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:26:40.149  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:26:40.158  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:26:40.229  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:26:40.230  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:26:40.230  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:26:40.247  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:26:40.248  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 213 ms
+2022-02-27 09:26:40.258  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2022-02-27 09:26:40.417  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2022-02-27 09:26:40.418  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:26:40.439  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:26:40.442  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:26:40.504  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:26:40.504  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:26:40.565  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:26:40.582  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15fc2cf5, org.springframework.security.web.context.SecurityContextPersistenceFilter@4cc8a490, org.springframework.security.web.header.HeaderWriterFilter@3ddf6d7, org.springframework.security.web.csrf.CsrfFilter@1bf53d9c, org.springframework.security.web.authentication.logout.LogoutFilter@f30ce73, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38ffe68b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@68085cc3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6961f8f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61f1f850, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d76c1f7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cd56417, org.springframework.security.web.session.SessionManagementFilter@7e636f1d, org.springframework.security.web.access.ExceptionTranslationFilter@4d9c1108, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a57f8dd]
+2022-02-27 09:26:40.670  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:26:40.681  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:26:40.684  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.668 seconds (JVM running for 1488.405)
+2022-02-27 09:26:40.685  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:30:09.235  INFO 6100 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:30:09.235  INFO 6100 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2022-02-27 09:30:09.238  INFO 6100 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2022-02-27 09:30:09.293  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:30:09.293 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:30:09.293  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:30:09.417  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:30:09.427  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:30:09.514  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:30:09.515  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:30:09.515  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:30:09.532  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:30:09.532  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 238 ms
+2022-02-27 09:30:09.541  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2022-02-27 09:30:09.581  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2022-02-27 09:30:09.581  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:30:09.597  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:30:09.600  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:30:09.663  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:30:09.663  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:30:09.722  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:30:09.737  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c41e50e, org.springframework.security.web.context.SecurityContextPersistenceFilter@4dda6cc, org.springframework.security.web.header.HeaderWriterFilter@166ce61f, org.springframework.security.web.csrf.CsrfFilter@5618c02b, org.springframework.security.web.authentication.logout.LogoutFilter@52d580, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1c6a2647, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@28861405, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5d6bfe47, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ce5be49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d48f1d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b061247, org.springframework.security.web.session.SessionManagementFilter@145425f5, org.springframework.security.web.access.ExceptionTranslationFilter@5f96e8c6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@349c44e1]
+2022-02-27 09:30:09.809  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:30:09.817  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:30:09.821  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.547 seconds (JVM running for 1697.542)
+2022-02-27 09:30:09.821  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:32:07.167  INFO 6100 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:32:07.167  INFO 6100 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2022-02-27 09:32:07.169  INFO 6100 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2022-02-27 09:32:07.222  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:32:07.223 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:32:07.223  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:32:07.337  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:32:07.346  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:32:07.415  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:32:07.416  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:32:07.416  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:32:07.438  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:32:07.438  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 214 ms
+2022-02-27 09:32:07.451  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2022-02-27 09:32:07.529  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2022-02-27 09:32:07.529  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:32:07.548  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:32:07.550  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:32:07.612  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:32:07.612  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:32:07.675  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:32:07.695  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2448f66f, org.springframework.security.web.context.SecurityContextPersistenceFilter@367087ca, org.springframework.security.web.header.HeaderWriterFilter@6741ee87, org.springframework.security.web.csrf.CsrfFilter@32757ddc, org.springframework.security.web.authentication.logout.LogoutFilter@22e40d58, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66c95111, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@768ffa3f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@26c8180f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25b8792c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4de58eca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@442d9af3, org.springframework.security.web.session.SessionManagementFilter@2ff29475, org.springframework.security.web.access.ExceptionTranslationFilter@c83eb1b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@170eb134]
+2022-02-27 09:32:07.787  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:32:07.796  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:32:07.800  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.594 seconds (JVM running for 1815.52)
+2022-02-27 09:32:07.801  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:34:53.171  INFO 6100 --- [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:34:53.171  INFO 6100 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2022-02-27 09:34:53.174  INFO 6100 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2022-02-27 09:34:53.227  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:34:53.227 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:34:53.227  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:34:53.338  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:34:53.348  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:34:53.437  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:34:53.438  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:34:53.438  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:34:53.458  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:34:53.458  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 229 ms
+2022-02-27 09:34:53.469  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2022-02-27 09:34:53.532  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2022-02-27 09:34:53.532  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:34:53.548  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:34:53.551  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:34:53.618  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:34:53.619  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:34:53.688  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:34:53.706  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19d9dc91, org.springframework.security.web.context.SecurityContextPersistenceFilter@713a7d5, org.springframework.security.web.header.HeaderWriterFilter@1d732f11, org.springframework.security.web.csrf.CsrfFilter@21b6551f, org.springframework.security.web.authentication.logout.LogoutFilter@26ac4b56, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@77f81999, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5f99b432, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7eb28998, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f5b8747, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b543c1a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d4d3e84, org.springframework.security.web.session.SessionManagementFilter@149e16f4, org.springframework.security.web.access.ExceptionTranslationFilter@3671c030, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b6d043e]
+2022-02-27 09:34:53.769  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:34:53.776  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:34:53.779  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.569 seconds (JVM running for 1981.5)
+2022-02-27 09:34:53.780  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:35:28.040  INFO 6100 --- [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:35:28.041  INFO 6100 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2022-02-27 09:35:28.043  INFO 6100 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2022-02-27 09:35:28.098  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:35:28.098 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:35:28.098  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:35:28.215  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:35:28.224  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:35:28.292  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:35:28.293  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:35:28.293  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:35:28.311  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:35:28.311  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 211 ms
+2022-02-27 09:35:28.321  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2022-02-27 09:35:28.364  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2022-02-27 09:35:28.364  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:35:28.383  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:35:28.386  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:35:28.446  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:35:28.446  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:35:28.514  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:35:28.530  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74c7626, org.springframework.security.web.context.SecurityContextPersistenceFilter@70daaa10, org.springframework.security.web.header.HeaderWriterFilter@2ca8ce63, org.springframework.security.web.csrf.CsrfFilter@313f8c87, org.springframework.security.web.authentication.logout.LogoutFilter@52b7ced4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2fa6693d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@19ae8264, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@617ccdef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c18580f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46a95039, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69b3b02, org.springframework.security.web.session.SessionManagementFilter@3d4c528a, org.springframework.security.web.access.ExceptionTranslationFilter@360d5266, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a51aa28]
+2022-02-27 09:35:28.600  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:35:28.608  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:35:28.612  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.532 seconds (JVM running for 2016.333)
+2022-02-27 09:35:28.614  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:35:44.407  INFO 6100 --- [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:35:44.407  INFO 6100 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2022-02-27 09:35:44.409  INFO 6100 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2022-02-27 09:35:44.465  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:35:44.466 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:35:44.466  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:35:44.574  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:35:44.581  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:35:44.653  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:35:44.654  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:35:44.654  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:35:44.671  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:35:44.671  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 204 ms
+2022-02-27 09:35:44.680  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2022-02-27 09:35:44.875  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2022-02-27 09:35:44.875  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:35:44.894  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:35:44.896  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:35:44.956  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:35:44.956  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:35:45.017  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:35:45.033  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5658ac20, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ea69e6e, org.springframework.security.web.header.HeaderWriterFilter@83ad31c, org.springframework.security.web.csrf.CsrfFilter@a27ac13, org.springframework.security.web.authentication.logout.LogoutFilter@68742a9c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ec9bff2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7d474b80, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@76de541e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5db0587f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34cd2e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@505f3433, org.springframework.security.web.session.SessionManagementFilter@49d6e473, org.springframework.security.web.access.ExceptionTranslationFilter@2610b4b9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73aab1bf]
+2022-02-27 09:35:45.117  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:35:45.126  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:35:45.130  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.681 seconds (JVM running for 2032.851)
+2022-02-27 09:35:45.131  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:35:59.894  INFO 6100 --- [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:35:59.894  INFO 6100 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2022-02-27 09:35:59.896  INFO 6100 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2022-02-27 09:35:59.950  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:35:59.950 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:35:59.950  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:36:00.065  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:36:00.071  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:36:00.141  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:36:00.142  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:36:00.142  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:36:00.160  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:36:00.160  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 209 ms
+2022-02-27 09:36:00.169  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2022-02-27 09:36:00.224  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2022-02-27 09:36:00.224  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:36:00.242  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:36:00.245  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:36:00.304  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:36:00.304  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:36:00.338  WARN 6100 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.smith.demo.controllers.EmployeeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2d29e1c3]
+2022-02-27 09:36:00.338  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:36:00.338  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2022-02-27 09:36:00.374  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2022-02-27 09:36:00.374  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-02-27 09:36:00.381  INFO 6100 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-27 09:36:00.398 ERROR 6100 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeeController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.smith.demo.controllers.EmployeeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2d29e1c3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.1.jar:2.6.1]
+	at com.smith.demo.ProjectManagementApplication.main(ProjectManagementApplication.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.1.jar:2.6.1]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.smith.demo.controllers.EmployeeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2d29e1c3]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481) ~[spring-core-5.3.13.jar:5.3.13]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Employee
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3325) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2466) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463) ~[spring-core-5.3.13.jar:5.3.13]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Employee
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:468) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.6.1.jar:2.6.1]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	... 29 common frames omitted
+
+2022-02-27 09:36:12.088  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:36:12.088 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:36:12.088  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:36:12.194  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:36:12.202  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:36:12.275  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:36:12.276  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:36:12.276  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:36:12.294  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:36:12.294  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 205 ms
+2022-02-27 09:36:12.305  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2022-02-27 09:36:12.347  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2022-02-27 09:36:12.347  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:36:12.365  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:36:12.367  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:36:12.419  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:36:12.419  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:36:12.483  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:36:12.501  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e0dee07, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e29deb2, org.springframework.security.web.header.HeaderWriterFilter@6ef526c2, org.springframework.security.web.csrf.CsrfFilter@68e948cb, org.springframework.security.web.authentication.logout.LogoutFilter@1acec6ba, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1095fbf8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@445af0e0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5bde94f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cd2488f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bd6b6e1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d64bbf1, org.springframework.security.web.session.SessionManagementFilter@7ca46efd, org.springframework.security.web.access.ExceptionTranslationFilter@6edd849c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2cfd5021]
+2022-02-27 09:36:12.582  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:36:12.590  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:36:12.593  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.52 seconds (JVM running for 2060.314)
+2022-02-27 09:36:12.594  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:36:33.528  INFO 6100 --- [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:36:33.529  INFO 6100 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2022-02-27 09:36:33.531  INFO 6100 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2022-02-27 09:36:33.592  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:36:33.592 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:36:33.592  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:36:33.707  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:36:33.717  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:36:33.791  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:36:33.792  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:36:33.792  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:36:33.810  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:36:33.810  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 216 ms
+2022-02-27 09:36:33.819  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2022-02-27 09:36:33.860  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2022-02-27 09:36:33.860  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:36:33.882  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:36:33.885  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:36:33.941  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:36:33.941  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:36:34.006  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:36:34.021  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e038fe9, org.springframework.security.web.context.SecurityContextPersistenceFilter@57b396ca, org.springframework.security.web.header.HeaderWriterFilter@fe8a721, org.springframework.security.web.csrf.CsrfFilter@3297572f, org.springframework.security.web.authentication.logout.LogoutFilter@38af591d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1576f63, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@43850698, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@455b234d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a9949a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3082387c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32db6a70, org.springframework.security.web.session.SessionManagementFilter@5f159c28, org.springframework.security.web.access.ExceptionTranslationFilter@2051badf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66c236a0]
+2022-02-27 09:36:34.091  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:36:34.099  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:36:34.102  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.53 seconds (JVM running for 2081.823)
+2022-02-27 09:36:34.104  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:36:58.026  INFO 6100 --- [Thread-58] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:36:58.027  INFO 6100 --- [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2022-02-27 09:36:58.030  INFO 6100 --- [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2022-02-27 09:36:58.103  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:36:58.103 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:36:58.103  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:36:58.225  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:36:58.234  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:36:58.319  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:36:58.319  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:36:58.319  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:36:58.338  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:36:58.338  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 233 ms
+2022-02-27 09:36:58.351  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2022-02-27 09:36:58.426  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2022-02-27 09:36:58.426  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:36:58.454  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:36:58.459  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:36:58.519  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:36:58.519  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:36:58.588  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:36:58.603  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4840b6c5, org.springframework.security.web.context.SecurityContextPersistenceFilter@1edde988, org.springframework.security.web.header.HeaderWriterFilter@b7bfd5d, org.springframework.security.web.csrf.CsrfFilter@65f8fdb7, org.springframework.security.web.authentication.logout.LogoutFilter@7ccadb12, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@75f2bab4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@20c71364, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@31e6d108, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d7606d5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49b39133, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20834858, org.springframework.security.web.session.SessionManagementFilter@3ceabee7, org.springframework.security.web.access.ExceptionTranslationFilter@558ad442, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@736c5307]
+2022-02-27 09:36:58.691  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:36:58.698  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:36:58.701  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.621 seconds (JVM running for 2106.422)
+2022-02-27 09:36:58.702  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:37:06.312  INFO 6100 --- [Thread-62] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:37:06.313  INFO 6100 --- [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2022-02-27 09:37:06.314  INFO 6100 --- [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2022-02-27 09:37:06.374  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:37:06.375 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:37:06.375  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:37:06.478  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:37:06.484  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:37:06.555  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:37:06.555  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:37:06.556  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:37:06.573  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:37:06.573  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 196 ms
+2022-02-27 09:37:06.583  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2022-02-27 09:37:06.623  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2022-02-27 09:37:06.623  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:37:06.644  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:37:06.647  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:37:06.707  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:37:06.708  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:37:06.777  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:37:06.794  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b208f9d, org.springframework.security.web.context.SecurityContextPersistenceFilter@570aff0c, org.springframework.security.web.header.HeaderWriterFilter@5a07ae61, org.springframework.security.web.csrf.CsrfFilter@6604e455, org.springframework.security.web.authentication.logout.LogoutFilter@3597be7f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c93f7a4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6e7fda33, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@67c718d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73c51089, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14d6dc36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2307dae, org.springframework.security.web.session.SessionManagementFilter@166d87d8, org.springframework.security.web.access.ExceptionTranslationFilter@6298ce7a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c0d23e9]
+2022-02-27 09:37:06.889  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:37:06.897  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:37:06.900  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.542 seconds (JVM running for 2114.622)
+2022-02-27 09:37:06.901  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:37:21.661  INFO 6100 --- [Thread-66] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:37:21.662  INFO 6100 --- [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2022-02-27 09:37:21.664  INFO 6100 --- [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2022-02-27 09:37:21.725  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:37:21.725 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:37:21.725  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:37:21.836  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:37:21.844  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:37:21.921  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:37:21.921  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:37:21.921  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:37:21.941  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:37:21.941  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 214 ms
+2022-02-27 09:37:21.951  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2022-02-27 09:37:21.993  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2022-02-27 09:37:21.993  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:37:22.011  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:37:22.014  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:37:22.069  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:37:22.069  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:37:22.110  WARN 6100 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'projectController': Unsatisfied dependency expressed through field 'proSer'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectServices' defined in file [D:\Smith\Smith Projects\project-management\target\classes\com\smith\demo\services\ProjectServices.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.smith.demo.services.ProjectServices]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+
+2022-02-27 09:37:22.110  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:37:22.110  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2022-02-27 09:37:22.164  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2022-02-27 09:37:22.164  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-02-27 09:37:22.169  INFO 6100 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-27 09:37:22.173 ERROR 6100 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'projectController': Unsatisfied dependency expressed through field 'proSer'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectServices' defined in file [D:\Smith\Smith Projects\project-management\target\classes\com\smith\demo\services\ProjectServices.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.smith.demo.services.ProjectServices]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.1.jar:2.6.1]
+	at com.smith.demo.ProjectManagementApplication.main(ProjectManagementApplication.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.1.jar:2.6.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectServices' defined in file [D:\Smith\Smith Projects\project-management\target\classes\com\smith\demo\services\ProjectServices.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.smith.demo.services.ProjectServices]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.smith.demo.services.ProjectServices]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+	ProjectRepository cannot be resolved to a type
+
+	at com.smith.demo.services.ProjectServices.<init>(ProjectServices.java:19) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 38 common frames omitted
+
+2022-02-27 09:37:31.855  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:37:31.855 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:37:31.855  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:37:31.954  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:37:31.963  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:37:32.034  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:37:32.034  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:37:32.034  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:37:32.051  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:37:32.051  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 195 ms
+2022-02-27 09:37:32.067  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2022-02-27 09:37:32.110  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2022-02-27 09:37:32.112  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:37:32.129  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:37:32.131  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:37:32.187  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:37:32.187  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:37:32.254  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:37:32.269  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21bd782a, org.springframework.security.web.context.SecurityContextPersistenceFilter@478df04c, org.springframework.security.web.header.HeaderWriterFilter@49498da, org.springframework.security.web.csrf.CsrfFilter@3b07fd3, org.springframework.security.web.authentication.logout.LogoutFilter@4d4709b7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@35de5fef, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@75c302d9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4cb1a94f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8a31214, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28510992, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@296bef71, org.springframework.security.web.session.SessionManagementFilter@47435190, org.springframework.security.web.access.ExceptionTranslationFilter@2bbc8bb2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c3d3058]
+2022-02-27 09:37:32.357  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:37:32.366  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:37:32.370  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.53 seconds (JVM running for 2140.092)
+2022-02-27 09:37:32.371  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:38:50.516  INFO 6100 --- [Thread-70] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:38:50.517  INFO 6100 --- [Thread-70] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2022-02-27 09:38:50.519  INFO 6100 --- [Thread-70] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2022-02-27 09:38:50.583  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:38:50.583 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:38:50.583  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:38:50.690  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:38:50.698  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:38:50.767  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:38:50.767  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:38:50.767  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:38:50.784  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:38:50.784  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 199 ms
+2022-02-27 09:38:50.793  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2022-02-27 09:38:51.002  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2022-02-27 09:38:51.002  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:38:51.017  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:38:51.020  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:38:51.074  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:38:51.074  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:38:51.140  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:38:51.158  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b8dca6a, org.springframework.security.web.context.SecurityContextPersistenceFilter@6458e5fc, org.springframework.security.web.header.HeaderWriterFilter@62480ce4, org.springframework.security.web.csrf.CsrfFilter@30fdc6be, org.springframework.security.web.authentication.logout.LogoutFilter@6771e991, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@54afa91f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1f7dce8a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@10fa93d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@771582da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55989ff0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@698b911b, org.springframework.security.web.session.SessionManagementFilter@3a4e1c3d, org.springframework.security.web.access.ExceptionTranslationFilter@726588, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e0ecc53]
+2022-02-27 09:38:51.246  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:38:51.254  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:38:51.258  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.691 seconds (JVM running for 2218.98)
+2022-02-27 09:38:51.259  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:38:57.804  INFO 6100 --- [Thread-77] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:38:57.805  INFO 6100 --- [Thread-77] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2022-02-27 09:38:57.806  INFO 6100 --- [Thread-77] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+2022-02-27 09:38:57.868  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:38:57.868 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:38:57.868  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:38:57.978  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:38:57.985  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:38:58.053  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:38:58.053  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:38:58.053  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:38:58.069  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:38:58.070  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 201 ms
+2022-02-27 09:38:58.079  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2022-02-27 09:38:58.120  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2022-02-27 09:38:58.120  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:38:58.137  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:38:58.139  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:38:58.191  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:38:58.192  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:38:58.255  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:38:58.273  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@773b4034, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f04c38d, org.springframework.security.web.header.HeaderWriterFilter@166aacdd, org.springframework.security.web.csrf.CsrfFilter@474e13ae, org.springframework.security.web.authentication.logout.LogoutFilter@2290df27, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6356263b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@25583b0d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1d6ca1c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d6e672f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e212e1b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fd943bf, org.springframework.security.web.session.SessionManagementFilter@68e06e5c, org.springframework.security.web.access.ExceptionTranslationFilter@43c22f45, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3562feb3]
+2022-02-27 09:38:58.361  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:38:58.368  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:38:58.371  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.52 seconds (JVM running for 2226.093)
+2022-02-27 09:38:58.373  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:39:17.201  INFO 6100 --- [Thread-81] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:39:17.202  INFO 6100 --- [Thread-81] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2022-02-27 09:39:17.205  INFO 6100 --- [Thread-81] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2022-02-27 09:39:17.276  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Starting ProjectManagementApplication using Java 15.0.2 on PRO14 with PID 6100 (D:\Smith\Smith Projects\project-management\target\classes started by m.adam in D:\Smith\Smith Projects\project-management)
+2022-02-27 09:39:17.276 DEBUG 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Running with Spring Boot v2.6.1, Spring v5.3.13
+2022-02-27 09:39:17.276  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : The following profiles are active: prod
+2022-02-27 09:39:17.381  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-27 09:39:17.389  INFO 6100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2022-02-27 09:39:17.460  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-27 09:39:17.460  INFO 6100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-27 09:39:17.460  INFO 6100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-27 09:39:17.477  INFO 6100 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-02-27 09:39:17.477  INFO 6100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 200 ms
+2022-02-27 09:39:17.488  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2022-02-27 09:39:17.531  INFO 6100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2022-02-27 09:39:17.531  INFO 6100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pro-mandb'
+2022-02-27 09:39:17.547  INFO 6100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-27 09:39:17.549  INFO 6100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-02-27 09:39:17.598  INFO 6100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-27 09:39:17.599  INFO 6100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:39:17.657  WARN 6100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-27 09:39:17.686  INFO 6100 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f128ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@51df86f, org.springframework.security.web.header.HeaderWriterFilter@590ee780, org.springframework.security.web.csrf.CsrfFilter@5eace16f, org.springframework.security.web.authentication.logout.LogoutFilter@5e4bbbb2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7a0238b4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3424d82, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1d4b82d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f771fa6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21ebdb2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e4fcb95, org.springframework.security.web.session.SessionManagementFilter@3c83d109, org.springframework.security.web.access.ExceptionTranslationFilter@719f7ffd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a1b2589]
+2022-02-27 09:39:17.778  INFO 6100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-27 09:39:17.786  INFO 6100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-27 09:39:17.789  INFO 6100 --- [restartedMain] c.s.demo.ProjectManagementApplication    : Started ProjectManagementApplication in 0.534 seconds (JVM running for 2245.511)
+2022-02-27 09:39:17.790  INFO 6100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-27 09:48:36.932  INFO 6100 --- [RMI TCP Connection(50)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-02-27 09:48:36.943  INFO 6100 --- [RMI TCP Connection(50)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-27 09:48:36.943  INFO 6100 --- [RMI TCP Connection(50)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown initiated...
+2022-02-27 09:48:36.945  INFO 6100 --- [RMI TCP Connection(50)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown completed.
